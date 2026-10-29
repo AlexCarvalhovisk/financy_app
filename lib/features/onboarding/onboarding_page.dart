@@ -16,8 +16,9 @@ class OnboardingPage extends StatelessWidget {
       backgroundColor: AppColors.iceWhite,
       body: Column(
         children: [
-          const SizedBox(height: 48.0),
+          const SizedBox(height: 64.0),
           Image.asset('assets/images/banco.png'),
+          const SizedBox(height: 48.0),
           Text(
             'Gaste com cautela',
             style: AppTextStyles.mediumText.copyWith(
@@ -35,7 +36,7 @@ class OnboardingPage extends StatelessWidget {
             padding: const EdgeInsets.only(
               left: 32,
               right: 32,
-              top: 16,
+              top: 102,
               bottom: 4,
             ),
             child: PrimaryButton(text: 'Botão!', onPressed: () {}),
@@ -45,7 +46,7 @@ class OnboardingPage extends StatelessWidget {
             children: [
               Text(
                 'Não tem um conta? ',
-                style: AppTextStyles.smallText.copyWith(color: AppColors.grey),
+                style: AppTextStyles.smallText.copyWith(color: AppColors.darkGrey),
               ),
               Text(
                 'Clique aqui!',
